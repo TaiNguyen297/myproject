@@ -1,0 +1,25 @@
+[
+    {
+      "name": "Home",
+      "path": "/khoang-troi-cua-be"
+    },
+    
+    {
+      "name": "Resume",
+      "path": "/resume",
+      "subMenus": [
+        {
+          "name": "Download PDF"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "path": "/blog"
+    },
+    {
+      "name": "Github Stats",
+      "path": "/list-news"
+    }
+
+  ]
