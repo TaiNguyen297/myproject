@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import styles from '../../styles/Resume.module.css'; // adjust the path according to your project structure
 import data from '../../utils/data/json/resume.json';
 
@@ -114,9 +114,9 @@ const Resume = () => {
                   <p>{job.company}</p>
                   <p>{job.startDate} - {job.endDate} ({duration})</p>
                   <ul>
-                    {job.details.map((detail, i) => (
+                    {job.projectList.map((project, i) => (
                       <li key={i}>
-                        <a href={`#project-${i + 1}`}>{detail}</a>
+                        <a href={`#project-${i + 1}`}>{project.projectName}</a>
                       </li>
                     ))}
                   </ul>
@@ -124,8 +124,8 @@ const Resume = () => {
               );
             })}
           </div>
-          
-          <div className={styles.right}>
+
+          <div className={styles.right} >
             <h2>Education</h2>
             {data.education.map((education, index) => (
               <div key={index}>
@@ -151,32 +151,34 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-
-        <div className={styles.project}>
-        <h1>Project Detail</h1>
-        {data.project.job.map((job, jobIndex) => (
-          <div key={jobIndex}>
-            <h2>{job.info.service}</h2>
-            <p>{job.info.company} ({job.info.startDate} - {job.info.endDate})</p>
-            {job.details.map((project, projectIndex) => (
-              <div key={projectIndex}>
-                <div className={styles.detail}>
-                  <h4 id={`project-${projectIndex + 1}`}>{projectIndex + 1}. {project.projectName} ({project.projectYear})</h4>
-                  <ul>
-                    <li>Overall: {project.overall}</li>
-                    <li>Domain: {project.domain}</li>
-                    <li>Techstack: {project.techStack.join(", ")}</li>
-                  </ul>
+        
+        <div className={styles.container} id="project">
+          <div className={styles.project}>
+            <h1>Project Detail</h1>
+            {data.experience.map((job, jobIndex) => (
+              job.is_highlight && (
+                <div key={jobIndex}>
+                  <h2>{job.title}</h2>
+                  <p>{job.company} ({job.startDate} - {job.endDate})</p>
+                  {job.projectList.map((project, projectIndex) => (
+                    <div key={projectIndex}>
+                      <div className={styles.detail}>
+                        <h4 id={`project-${projectIndex + 1}`}>{projectIndex + 1}. {project.projectName} ({project.projectYear})</h4>
+                        <ul>
+                          <li>Overall: {project.overall}</li>
+                          <li>Domain: {project.domain}</li>
+                          <li>Techstack: {project.techStack.join(", ")}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
+              )
             ))}
           </div>
-        ))}
-      </div>
-
+        </div>
       </div>
     </div>
-
   );
 };
 

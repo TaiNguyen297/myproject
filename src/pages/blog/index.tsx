@@ -31,11 +31,18 @@ export default function Blog(props: { posts: any }) {
               gap: "30px",
             }}
           >
-
+           
             <Grid container spacing={2}>
               {posts.map((post: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <CardNews key={index} post={post} />
+                </Grid>
+              ))}
+            </Grid>
+            <Grid container spacing={2}>
+              {posts.map((post: any, index: any) => (
+                <Grid item xs={12} md={6} lg={4} key={index}>
+                  <SmallNews key={index} post={post} />
                 </Grid>
               ))}
             </Grid>

@@ -32,6 +32,7 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "markdown-it": "^14.1.0",
+    "markdown-it-html5-embed": "^1.0.0",
     "mui-nested-menu": "^3.2.2",
     "next": "13.4.5",
     "next-seo": "^6.1.0",

@@ -17,17 +17,113 @@
       "company": "PIXTA Vietnam Co. Ltd.",
       "startDate": "May 2019",
       "endDate": "Present",
-      "details": [
-        "Large language model finetuning",
-        "Multi-model image auto review",
-        "Text-to-Image generation",
-        "Image aesthetics assessment",
-        "Computer vision SaaS product",
-        "Face recognition and classification",
-        "Face detection in high resolution images",
-        "Image synthesis and translation by GANs",
-        "Video and tags extractive summarization"
-      ]
+      "projectList": [
+        {
+          "projectName": "Large language model finetunting",
+          "projectYear": 2023,
+          "overall": "Research about LLMs, research and implement techniques to continue training and finetuning LLMs on specific domain dataset.",
+          "domain": "Natural language processing, large language model",
+          "techStack": [
+            "HuggingFace",
+            "LitGPT",
+            "Llama2",
+            "ChatGPT",
+            "LoRA",
+            "qLoRA",
+            "Pytorch"
+          ]
+        },
+        {
+          "projectName": "Multi-model image auto review",
+          "projectYear": 2023,
+          "overall": "Build a series of AI models to handle vast of Computer vision problems, in order to automate image reviewing process. Deploy the system and optimize running performance.",
+          "domain": "Object detection, image classification, NER, vision language, deployment",
+          "techStack": [
+            "BLIP2",
+            "Detic",
+            "YOLOv7",
+            "VisionTransformer",
+            "Docker",
+            "FlaskAPI",
+            "ClearML",
+            "Pytorch"
+          ]
+        },
+        {
+          "projectName": "Text-to-image generation",
+          "projectYear": 2022,
+          "overall": "Research and understand some SOTA text-to-image generation models.",
+          "domain": "Computer vision, image generation",
+          "techStack": ["Stable Diffusion", "DreamBooth"]
+        },
+        {
+          "projectName": "Image aesthetics assessment",
+          "projectYear": 2022,
+          "overall": "Understand and propose  a set of criterias for objective image aesthetics assessment. Research and build a model to rank a list of image base on their aesthetics.",
+          "domain": "Computer vision, self-supervised learning",
+          "techStack": [
+            "AVA dataset",
+            "AADB dataset",
+            "NIMA",
+            "self-supervised aesthetic pretext tasks",
+            "Pytorch"
+          ]
+        },
+        {
+          "projectName": "Computer vision SaaS product",
+          "projectYear": 2022,
+          "overall": "Deploy and monitor computer vision models as a service.",
+          "domain": "Computer vision, deployment",
+          "techStack": ["Docker", "FlaskAPI", "Kubernetes", "AWS CloudWatch"]
+        },
+        {
+          "projectName": "Face recognition and classification",
+          "projectYear": 2021,
+          "overall": "Build face verification model and face analysis model which handles some attributes such as emotion, age, gender, race, hair, accessories …",
+          "domain": "Face recognition, face attribute classification",
+          "techStack": [
+            "ArcFace",
+            "RetinaFace",
+            "VGG2 face pretrained model",
+            "Pytorch"
+          ]
+        },
+        {
+          "projectName": "Face detection in high resolution images",
+          "projectYear": 2021,
+          "overall": "Build a solution to detect tiny face (~20 pixel) on high resolution image (~6000 pixel).",
+          "domain": "Face detection, High resolution image",
+          "techStack": [
+            "RetinaFace",
+            "SNIPER",
+            "AutoFocus",
+            "Docker",
+            "Pytorch",
+            "ONNX"
+          ]
+        },
+        {
+          "projectName": "Video and tags extractive summarization",
+          "projectYear": 2020,
+          "overall": "Build a model to extract feature from a video and summarize a long list of tags which describe the video into a shorter list.",
+          "domain": "Computer vision, video processing, natural language processing",
+          "techStack": [
+            "SlowFast",
+            "CSN",
+            "R(2+1)D Network",
+            "Attention mechanism",
+            "Docker"
+          ]
+        },
+        {
+          "projectName": "Image synthesis and translation by GANs",
+          "projectYear": 2019,
+          "overall": "Generate and control high resolution image from noise vector or base on a given input image.",
+          "domain": "Computer vision, image synthesis, image-to-image translation",
+          "techStack": ["StyleGAN2", "CycleGAN", "MUNIT", "DRIT++"]
+        }
+      ],
+      "is_highlight": true
     },
 
     {
@@ -35,11 +131,30 @@
       "company": "MCI Vietnam Consultant Joint Stock Company",
       "startDate": "Nov 2021",
       "endDate": "Present",
-      "details": [
-        "Python for data science",
-        "Machine learning",
-        "Deep learning"
-      ]
+      "projectList": [
+        {
+          "projectName": "Python for data science",
+          "projectYear": "",
+          "overall": "",
+          "domain": "",
+          "techStack": [""]
+        },
+        {
+          "projectName": "Machine learning",
+          "projectYear":"" ,
+          "overall": "",
+          "domain": "",
+          "techStack": [""]
+        },
+        {
+          "projectName": "Deep learning",
+          "projectYear":"" ,
+          "overall": "",
+          "domain": "",
+          "techStack": [""]
+        }
+      ],
+      "is_highlight": false
     },
 
     {
@@ -47,10 +162,23 @@
       "company": "Khoang troi cua be",
       "startDate": "Sep 2016",
       "endDate": "Present",
-      "details": [
-        "Training soft-skills for students in Hanoi",
-        "Organizing volunteer projects to support children"
-      ]
+      "projectList": [
+        {
+          "projectName": "Training soft-skills for students in Hanoi",
+          "projectYear":"" ,
+          "overall": "",
+          "domain": "",
+          "techStack": [""]
+        },
+        {
+          "projectName": "Organizing volunteer projects to support children",
+          "projectYear":"" ,
+          "overall": "",
+          "domain": "",
+          "techStack": [""]
+        }
+      ],
+      "is_highlight": false
     }
   ],
 
@@ -75,125 +203,6 @@
     "Innovator at PIXTA Vietnam Co. Ltd., in 2021",
     "Project of the Quarter at PIXTA Vietnam Co. Ltd., in 2022"
   ],
-  "skill": ["Research / Coding", "Presentation / Training", "Leadership"],
+  "skill": ["Research / Coding", "Presentation / Training", "Leadership"]
 
-
-  "project": {
-    "job": [
-      {
-        "info": {
-          "service": "Data Scientist - AI Engineer",
-          "company": "PIXTA Vietnam Co. Ltd.",
-          "startDate": "May 2019",
-          "endDate": "Present"
-        },
-        "details": [
-          {
-            "projectName": "Large language model finetunting",
-            "projectYear": 2023,
-            "overall": "Research about LLMs, research and implement techniques to continue training and finetuning LLMs on specific domain dataset.",
-            "domain": "Natural language processing, large language model",
-            "techStack": [
-              "HuggingFace",
-              "LitGPT",
-              "Llama2",
-              "ChatGPT",
-              "LoRA",
-              "qLoRA",
-              "Pytorch"
-            ]
-          },
-          {
-            "projectName": "Multi-model image auto review",
-            "projectYear": 2023,
-            "overall": "Build a series of AI models to handle vast of Computer vision problems, in order to automate image reviewing process. Deploy the system and optimize running performance.",
-            "domain": "Object detection, image classification, NER, vision language, deployment",
-            "techStack": [
-              "BLIP2",
-              "Detic",
-              "YOLOv7",
-              "VisionTransformer",
-              "Docker",
-              "FlaskAPI",
-              "ClearML",
-              "Pytorch"
-            ]
-          },
-          {
-            "projectName": "Text-to-image generation",
-            "projectYear": 2022,
-            "overall": "Research and understand some SOTA text-to-image generation models.",
-            "domain": "Computer vision, image generation",
-            "techStack": ["Stable Diffusion", "DreamBooth"]
-          },
-          {
-            "projectName": "Image aesthetics assessment",
-            "projectYear": 2022,
-            "overall": "Understand and propose  a set of criterias for objective image aesthetics assessment. Research and build a model to rank a list of image base on their aesthetics.",
-            "domain": "Computer vision, self-supervised learning",
-            "techStack": [
-              "AVA dataset",
-              "AADB dataset",
-              "NIMA",
-              "self-supervised aesthetic pretext tasks",
-              "Pytorch"
-            ]
-          },
-          {
-            "projectName": "Computer vision SaaS product",
-            "projectYear": 2022,
-            "overall": "Deploy and monitor computer vision models as a service.",
-            "domain": "Computer vision, deployment",
-            "techStack": ["Docker", "FlaskAPI", "Kubernetes", "AWS CloudWatch"]
-          },
-          {
-            "projectName": "Face recognition and classification",
-            "projectYear": 2021,
-            "overall": "Build face verification model and face analysis model which handles some attributes such as emotion, age, gender, race, hair, accessories …",
-            "domain": "Face recognition, face attribute classification",
-            "techStack": [
-              "ArcFace",
-              "RetinaFace",
-              "VGG2 face pretrained model",
-              "Pytorch"
-            ]
-          },
-          {
-            "projectName": "Face detection in high resolution images",
-            "projectYear": 2021,
-            "overall": "Build a solution to detect tiny face (~20 pixel) on high resolution image (~6000 pixel).",
-            "domain": "Face detection, High resolution image",
-            "techStack": [
-              "RetinaFace",
-              "SNIPER",
-              "AutoFocus",
-              "Docker",
-              "Pytorch",
-              "ONNX"
-            ]
-          },
-          {
-            "projectName": "Video and tags extractive summarization",
-            "projectYear": 2020,
-            "overall": "Build a model to extract feature from a video and summarize a long list of tags which describe the video into a shorter list.",
-            "domain": "Computer vision, video processing, natural language processing",
-            "techStack": [
-              "SlowFast",
-              "CSN",
-              "R(2+1)D Network",
-              "Attention mechanism",
-              "Docker"
-            ]
-          },
-          {
-            "projectName": "Image synthesis and translation by GANs",
-            "projectYear": 2019,
-            "overall": "Generate and control high resolution image from noise vector or base on a given input image.",
-            "domain": "Computer vision, image synthesis, image-to-image translation",
-            "techStack": ["StyleGAN2", "CycleGAN", "MUNIT", "DRIT++"]
-          }
-        ]
-      }
-    ]
-  }
 }

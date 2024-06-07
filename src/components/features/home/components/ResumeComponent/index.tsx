@@ -26,6 +26,7 @@ export const ResumeComponent: React.FC<ResumeProps> = ({
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${ktcbBackground.src})`,
       backgroundSize: "100% 100%;",
       backgroundPosition: "center",
+      backgroundAttachment: "fixed",
     }}
     >
       <Stack alignItems="center">
@@ -71,9 +72,9 @@ export const ResumeComponent: React.FC<ResumeProps> = ({
 
               return (
                 <Box key={index} flexBasis="50%" style={{ margin: '10px 0', padding: '10px' }}>
-                  <Typography variant="h6" style={{ fontWeight: 'bold',color: 'white' }}>{job.title}</Typography>
-                  <Typography style={{ fontStyle: 'italic', color: 'white' }}>{job.company}</Typography>
-                  <Typography style={{ fontStyle: 'italic',color: 'white' }}>{job.startDate} - {job.endDate} ({duration})</Typography>
+                  <Typography variant="h6" style={{ fontWeight: 'bold', color: 'white', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' }}>{job.title}</Typography>
+                  <Typography style={{ fontStyle: 'italic', color: 'white', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' }}>{job.company}</Typography>
+                  <Typography style={{ fontStyle: 'italic', color: 'white', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' }}>{job.startDate} - {job.endDate} ({duration})</Typography>
                 </Box>
               );
             })}
